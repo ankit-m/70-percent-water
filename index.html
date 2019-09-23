@@ -2,29 +2,215 @@
   <head>
     <title>70 percent water</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/all.min.css" rel="stylesheet">
   </head>
   <style>
     body {
-      background: #0A4B73;
-      color: white;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      color:#2E3853;
+      font-size: 1.3rem;
     }
 
-    .jumbotron {
-      max-width: 800px;
-      margin: 32px auto;
-      text-align: center;
+    section {
+      padding: 4rem 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .masthead {
+      color: #2E3853;
+      background-image: url('images/ocean1x.jpg');
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    @media (min-width: 992px)  {
+      .masthead {
+        background-image: url('images/ocean3x.jpg');
+      }
+    }
+
+    .intro {
+      font-size: 1.3rem;
+    }
+
+    .intro-image {
+      border-radius: 50%;
     }
 
     .headline {
-      font-size: 3em;
-      line-height: 1.5em;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+
+    .join {
+      background: #DBDCD6;
+      color: #2E3853;
+    }
+
+    .problem {
+      background: #2E3853;
+      color: #DBDCD6;
+    }
+
+    .qa {
+      background: #3E6A91;
+      color: #DBDCD6;
+    }
+
+    .join-movement {
+      color: white;
+      background: #DB4549;
+    }
+
+    .know-more {
+      opacity: 0.3;
     }
   </style>
   <body>
-    <section class="jumbotron">
-      <p class="headline">A planet that is 70% water has more than 4 billion people <strong>fighting for water every single day</strong>.</p>
-      <small class="caption">Check this page again in a week. There’s a lot awaiting.</small>
+    <section class="masthead">
+      <div class="container">
+        <nav class="header">
+          <div>
+            70percentwater
+          </div>
+          <a href="#challenge" class="join-movement btn btn-lg">
+            Act now
+          </a>
+        </nav>
+
+        <div class="row mt-4">
+          <div class="col-md-9">
+            <p class="headline mt-5">A planet that is 70% water has more than 4 billion people <strong>fighting for water every single
+                day</strong>.</p>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+        <div class="mt-4">
+          <small class="know-more">Scroll down to know more</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/watercrisis1x.jpg"
+              class="intro-image"
+            >
+          </div>
+          <div class="col-md-6">
+            <h2 class="h2 mb-3">About</h2>
+            <p>
+              70percentwater.org is a unique initiative that seeks to support water equity and water conservation through
+              unique, people-powered campaigns that are designed to maximise water conservation with smartly modified designs of
+              everyday
+              urban habits, products & techniques.
+            </p>
+            <p>
+              In this process, water-rich areas end up supporting projects in water deficit
+              regions, leading to water equity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="problem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="h2">Problem</h2>
+            <p>
+              Earth’s irony is that on a planet that is 70% covered with water, two-thirds of the global population live
+              under
+              conditions of severe water scarcity at least 1 month of the year.
+            </p>
+            <p>
+              By 2025, nearly two billion people will be living in countries or regions with absolute water scarcity
+              according to
+              the United Nations.
+            </p>
+            <p>
+              70percentwater.org is a community of conscious people around the world addressing the problem of water equity
+              and scarcity, before it’s too late.
+            </p>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <a href="#challenge" class="join-movement btn btn-lg mt-4">
+              Join the movement
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge" id="challenge">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="h2 mb-4">#WaterBucketChallenge</h2>
+    
+          <p>
+            <span style="font-size: 1.7rem">One day a week, one <b>bucket</b> instead of a shower.</span>
+    
+            <br>
+            <br>
+    
+            <small class="text-muted">Did you know that a shower takes 10 more litres than a bucket bath?</span>
+    
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="join" id="join">
+      <div class="container">
+        <h2 class="h2">How can you help?</h2>
+        <div class="row mt-3">
+          <div class="col-md-4 text-center mt-3">
+            <div style="font-size: 5rem" class="mb-3">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4 class="h4 my-4">Research</h4>
+            <p class="px-4">
+              We’re developing cost effective, gravity-powered filtration systems for
+              water stress areas and we’d love a bigger team.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center mt-3">
+            <div style="font-size: 5rem" class="mb-3">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h4 class="h4 my-4">Lead</h4>
+            <p class="px-4">
+              Lead a 70percentwater chapter in your community/institution
+              to advocate best water practices and cut wastage.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center mt-3">
+            <div style="font-size: 5rem" class="mb-3">
+              <i class="fas fa-donate"></i>
+            </div>
+            <h4 class="h4 my-4">Donate</h4>
+            <p class="px-4">
+              70percentwater is a purely voluntary effort. Our B2B services for free
+              because we do not want capital to be a deterrent.
+            </p>
+          </div>
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
